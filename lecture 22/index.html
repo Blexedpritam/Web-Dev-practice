@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;    
+            --custom-width:330px;
+         }
+        .contaniner{
+            background-color: beige;
+            height: 650px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            
+            --primary-color:brown;    
+            --custom-width:330px;
+            background-color: aqua;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: -10px -15px var(--primary-color); */
+            /* box-shadow:10px 15px 5px brown ; */
+            /* box-shadow: 10px 15px 5px 50px rgb(205, 11, 11); */
+            /* box-shadow: inset 10px 15px brown; */
+            /* box-shadow: 10px 15px red , 15px 8px green; */
+
+        }
+        #head1{
+            text-shadow: 2px 3px 2px white;
+            /* text-shadow: yellow 12px 13px 2px; */
+            /* text-shadow: white 12px 13px; */
+            /* text-shadow: 3px 4px; */
+            /* text-shadow:
+            yellow 12px 13px 2px ,
+            white 3px 2x 1px;
+            color: green; */
+ 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="contaniner">
+        <div class="box">
+            <img src="I4.jpg">
+            <h2 id="head1">welcome to pritam dev</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit nisi iure, quisquam sint quaerat nesciunt quo qui placeat architecto quae aliquam ex eaque eligendi animi beatae dolorum reiciendis ullam.</p>
+        </div>
+    </div>
+
+</body>
+</html>
