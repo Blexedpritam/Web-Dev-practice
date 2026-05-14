@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amimation ka gyan</title>
+    <style>
+        *{
+            margin:0 ;
+            padding:0 ;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            background-color:beige ;
+            border: 5px solid black;
+            
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 1px solid yellow ;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            /* animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 4;
+            /* animation-delay: 2s; */
+            /* animation-timing-function speeds types */
+            /* 1.linear - Specifies an animation with the same speed from start to end */
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: ease; */
+            /* 2.ease - Specifies an animation with a slow start, then fast, then end slowly (this is default) */
+            /* animation-timing-function: ease-in;
+            ease-in - Specifies an animation with a slow start */
+            /* animation-timing-function: ease-out;
+            ease-out - Specifies an animation with a slow end */
+            /* animation-timing-function: ease-in-out;
+            ease-in-out - Specifies an animation with a slow start and end */
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: both; */ 
+
+            /* @keyframes duration | easing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name */
+            
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+
+        }
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1024px;
+            }
+        }
+
+       #box2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 1px solid yellow ;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s linear 1s infinite alternate none running leftMovement;
+
+        }
+         @keyframes leftMovement{
+            from{
+                top: 650px;
+                left: 1320px;
+            }
+            to{
+                top: 650px;
+                left: 0;
+            }
+         }
+         #circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid yellow ;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            top: 30%;
+            left:30%;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+         }
+         @keyframes circleMovement{
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 70%;
+                left: 10%;
+            }
+            100%{
+                top: 75%;
+                left: 95%;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+
+        <div id="circle"></div>
+        <div id="box2"></div>
+       
+    </div>
+</body>
+</html>
