@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background: #7b7676;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,200px);
+    gap: 1rem;
+    padding: 4rem;
+    border: 2px solid white;
+    /* justify-items: end; */
+    /* align-items: stretch; */
+    place-items: center;
+
+}
+
+.item{
+    /* height: 50px;
+    width: 100px; */
+    background: rgb(30, 127, 127);
+    border: 5px solid rgb(218, 193, 193);
+    /* child items for verticlal axis */
+    /* justify-self: center; */
+    /* align-self:stretch ; */
+    /* place-self: stretch; */
+}
+
