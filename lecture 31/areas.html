@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Aera </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(70, 67, 67);
+            padding: 4rem;
+            
+            grid-template-areas: 
+            "header header header"
+            "sidebar c1 c1"
+            "sidebar c2 c3"
+            "footer footer footer"
+            ;
+        }
+        .items{
+            border: 5px solid black;
+            background-color: rgb(104, 104, 217);
+            color: white;
+            padding: 1rem;
+        }
+        #header{
+            grid-area: header;
+        }
+        #sidebar{
+            grid-area: sidebar;
+        }
+        #c1{
+            grid-area: c1;
+        }
+        #c2{
+            grid-area: c2;
+        }
+        #c3{
+            grid-area: c3;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="header">Header</div>
+        <div class="items" id="sidebar">Sidebar</div>
+        <div class="items" id="c1">Conent1</div>
+        <div class="items" id="c2">Conent2</div>
+        <div class="items" id="c3">Conent3</div>
+        <div class="items" id="footer">Footer</div>
+        
+    </div>
+</body>
+</html>
